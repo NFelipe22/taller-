@@ -1,0 +1,73 @@
+/*
+1. selector por etiqueta:cambia el estio a todas las etiquetas en cuestion se coloca directamente el monbre de la etiqueta
+2. Selector por clase cambia o modifica el estilo del elemto en donde se mencione la clase en el atributo class para crear un archivio por claser se coloca .nombreEstilo
+3.selector por identifiacador es decir por el id,madifica el estilo del elemto que posea el id
+4selector universal
+*/
+/***************************************************/
+
+/* 1. Por etiqueta*/
+
+p{ 
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    background-color: beige;
+
+}
+ 
+.subtitulos{
+    text-align: center;
+    color: aqua;
+    background-color: bisque;
+}
+ 
+#infor{
+    border-radius: 5px;
+    background-color: beige;
+    color: azure;
+    padding: 10px;
+     
+}
+/*4. selector por atributo */
+
+[class]{
+    background-color: antiquewhite;
+}
+    /*Combinadores */
+
+    a[href]{
+        text-align: center;
+        margin-left: 2%;
+        color: brown;
+    }
+    /*utilizando sufijos */
+
+    a[href$=".com"]{
+        margin-left: 4%;
+        color:blue
+    }
+    /*utilizando prefijos*/
+    [claass^="ass"]{
+        font-size: 25px;
+    }
+ /*ejemplo de convinador */
+ div > a{color: blueviolet;}
+ 
+
+/*convinador hermanos */
+div + p {
+    background-color: yellow;
+}
+
+/*ejemplo de agrupacion de selectores*/
+a:hover:active {
+    background-color: rgb(0, 255, 55);
+  }
+
+ /*ejemplo de acendecia directa*/   
+ div> span {color: aqua;}
+
+ /*ejemplo de selectores directos*/
+ li:nth-of-type(2) {
+    background: lightgreen;
+ }
